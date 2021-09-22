@@ -12,10 +12,7 @@ interface Props {
   }
 }
 
-
 export default function Home({ product }: Props) {
-
-
   return (
     <>
       <Head>
