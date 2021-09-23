@@ -1,5 +1,6 @@
-import { GetStaticProps } from "next";
+import { GetServerSideProps } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import { getPrismicClient } from "../../services/prismic";
 import Prismic from "@prismicio/client"
 
@@ -25,11 +26,13 @@ export default function Product({ posts }: Props) {
         <div className={styles.posts}>
           {
             posts.map(({slug,excerpt,title,updateAt})=>(
-              <a href="#" key={slug}>
-                <time>{updateAt}</time>
-                <strong>{title}</strong>
-                <p>{excerpt}</p>
-              </a>
+              <Link href={`/posts/${slug}`} key={slug}>
+                <a>
+                  <time>{updateAt}</time>
+                  <strong>{title}</strong>
+                  <p>{excerpt}</p>
+                </a>
+              </Link>
             ))
           }
         </div>
@@ -38,7 +41,7 @@ export default function Product({ posts }: Props) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const prismic = getPrismicClient()
 
   const response = await prismic.query([

@@ -1,34 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rentx app
 
-## Getting Started
+## About this Project
 
-First, run the development server:
+_"The objective of this project is to exercise some React and [Next.js](https://nextjs.org/) concepts as part of the [Ignite program](https://rocketseat.com.br/ignite)"._
 
-```bash
-npm run dev
-# or
-yarn dev
+## Why?
+
+This project is part of my personal portfolio, so, I'll be happy if you could provide me any feedback about the project, code, structure or anything that you can report that could make me a better developer!
+
+Email-me: harrisonhenrisn@gmail.com
+
+Connect with me at [LinkedIn](https://linkedin.com/in/harrison-henri-dos-santos-nascimento).
+
+Also, you can use this Project as you wish, be for study, be for make improvements or earn money with it!
+
+It's free!
+
+## Functionalities
+
+- Home screen
+
+![](assets/home.png)
+
+- Posts screen
+
+![](assets/posts.png)
+
+- Post screen
+
+![](assets/post.png)
+
+- Post preview screen
+
+![](assets/postpreview.png)
+
+- Stripe screen
+
+![](assets/stripe.png)
+
+## Install
+
+Clone the repo using
+
+```
+$ git clone https://github.com/HarrisonHenri/ignews.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+$ cd ignews
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Install all the required dependencies
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+$ yarn
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Then execute
 
-## Learn More
+```
+$ yarn start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Some concepts applied
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- SSR - Server side rendering
+- SSG - Static site generation
+- Payment method with [stripe](https://stripe.com) and its cli
+- Webhooks pattern
+- JAMStack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Built With
 
-## Deploy on Vercel
+- [React](https://github.com/facebook/react) - Build the web app using JavaScript and React
+- [Next.js](https://nextjs.org/)
+- [Axios](https://github.com/axios/axios) - HTTP Client
+- [Faunadb](https://fauna.com/)
+- [Prismic](https://prismic.io/) - Headless CMS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can send how many PR's do you want, I'll be glad to analyse and accept them! And if you have any question about the project...
+
+Email-me: harrisonhenrisn@gmail.com
+
+Connect with me at [LinkedIn](https://linkedin.com/in/harrison-henri-dos-santos-nascimento-a6ba33112).
+
+Thank you!
