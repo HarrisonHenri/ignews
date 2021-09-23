@@ -62,6 +62,12 @@ Then execute
 $ yarn start
 ```
 
+PS: You need also some settings of:
+
+- [Prismic](https://prismic.io/)
+- [Stripe](https://stripe.com/)
+- [Github OAuth app](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)
+
 ## Some concepts applied
 
 - SSR - Server side rendering
