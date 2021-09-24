@@ -1,4 +1,4 @@
-# Rentx app
+# Ignews
 
 ## About this Project
 
