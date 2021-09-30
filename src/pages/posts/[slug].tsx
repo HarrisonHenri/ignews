@@ -15,7 +15,7 @@ interface Props {
   }
 }
 
-export default function PostPreview({ post }: Props) {
+export default function Post({ post }: Props) {
   return (
     <>
       <Head>

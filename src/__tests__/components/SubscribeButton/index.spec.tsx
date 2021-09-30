@@ -1,9 +1,9 @@
 import React from 'react';
 import { screen, render, fireEvent } from "@testing-library/react"
-import { SubscribeButton } from '.';
 import { mocked } from "ts-jest/utils";
 import { signIn, useSession } from 'next-auth/client';
 import {useRouter} from 'next/router';
+import { SubscribeButton } from '../../../components/SubscribeButton';
 
 jest.mock("next-auth/client")
 
@@ -37,9 +37,9 @@ describe('SubscribeButton', () => {
     expect(mockedSignIn).toBeCalled()
   });
 
-  fit('should navigate the user to posts when the user has a subscription', () => {
+  it('should navigate the user to posts when the user has a subscription', () => {
     const mockedUseSession = mocked(useSession)
-    mockedUseSession.mockReturnValueOnce([{activeSubscription: true}, false])
+    mockedUseSession.mockReturnValueOnce([{userActiveSubscription: true}, false])
 
     const pushMock = jest.fn()
     const mockedRouter = mocked(useRouter)

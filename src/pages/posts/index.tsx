@@ -16,7 +16,7 @@ interface Props {
   }[]
 }
 
-export default function Product({ posts }: Props) {
+export default function Posts({ posts }: Props) {
   return (
     <>
       <Head>
