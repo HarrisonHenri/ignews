@@ -18,7 +18,7 @@ It's free!
 
 ## Demo
 
-To access the demo, please go to [https://ignews-harrisonhenri.vercel.app/][https://ignews-harrisonhenri.vercel.app/].
+To access the demo, please go to [https://ignews-harrisonhenri.vercel.app/](https://ignews-harrisonhenri.vercel.app/).
 
 ## Functionalities
 
