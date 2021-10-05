@@ -16,6 +16,10 @@ Also, you can use this Project as you wish, be for study, be for make improvemen
 
 It's free!
 
+## Demo
+
+To access the demo, please go to [https://ignews-harrisonhenri.vercel.app/][https://ignews-harrisonhenri.vercel.app/].
+
 ## Functionalities
 
 - Home screen
