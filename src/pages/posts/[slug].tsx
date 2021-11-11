@@ -39,15 +39,6 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params, loca
   const session = await getSession({ req })
   const { slug } = params
 
-  if (!session?.userActiveSubscription && !slug.includes("preview")){
-    return {
-      redirect: {
-        destination: "/",
-        permanent: false
-      }
-    }
-  }
-
   const prismic = getPrismicClient()
 
   const response = await prismic.getByUID("publicatio", String(slug), {})
